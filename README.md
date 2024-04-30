@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/TomLi0421/ping-single-column-coming-soon-page](https://github.com/TomLi0421/ping-single-column-coming-soon-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://tomli0421.github.io/ping-single-column-coming-soon-page/](https://tomli0421.github.io/ping-single-column-coming-soon-page/)
 
 ## My process
 
