@@ -1,0 +1,305 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  /* primary */
+  --blue: hsl(223, 87%, 63%);
+  /* secondary */
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  /* neutral */
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 1em 0;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header .dot {
+  color: var(--blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: var(--gray);
+  margin: 1em 0;
+}
+
+main .soon-text {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+main p {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+  color: var(--very-dark-blue);
+}
+
+.email-form {
+  position: relative;
+  text-align: center;
+}
+
+.input-email {
+  box-sizing: border-box;
+  min-width: 200px;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  border: 1px solid var(--pale-blue);
+}
+
+.input-email::placeholder {
+  color: var(--pale-blue);
+}
+
+.error-border {
+  border-color: var(--light-red);
+}
+
+.error-msg {
+  position: absolute;
+  margin-bottom: 1.2em;
+  font-style: italic;
+  font-size: 0.6em;
+  color: var(--light-red);
+  bottom: -20px;
+  left: 60px;
+}
+
+.notify-btn {
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: var(--blue);
+  box-shadow: 0px 2px 10px var(--blue);
+  margin-bottom: 2em;
+}
+
+.notify-btn:hover {
+  cursor: pointer;
+}
+
+.chart {
+  width: 90%;
+  margin: 2em 0;
+}
+
+/* footer */
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.icon {
+  color: var(--blue);
+  width: 35px;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 0.5em;
+}
+
+.icon:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+
+.contact p {
+  font-size: 0.6em;
+  color: var(--gray);
+  margin-bottom: 2.5em;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  .input-email {
+    margin-bottom: 0;
+    width: 70%;
+    margin-right: 1em;
+  }
+
+  .notify-btn {
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+  .error-msg {
+    position: static;
+  }
+}
